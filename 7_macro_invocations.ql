@@ -1,5 +1,5 @@
 import cpp
 
-from MacroInvocation m
-where m.getParentInvocation().getMacroName().regexpMatch("ntoh(s|l|ll)")
-select m, "macro siendo invocada"
+from MacroInvocation mi
+where mi.getMacro().getName().regexpMatch("ntoh(s|l|ll)")
+select mi
